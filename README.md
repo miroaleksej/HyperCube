@@ -271,10 +271,10 @@ If you use Quantum Hypercube in your research, please cite:
 @software{QuantumHypercube2023,
   author = {Quantum Hypercube Team},
   title = {Quantum Hypercube: Multidimensional Physics Simulation Platform},
-  year = {2023},
+  year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/quantum-hypercube/core}}
+  howpublished = {\url{https://github.com/miroaleksej/HyperCube/tree/main}}
 }
 ```
 
