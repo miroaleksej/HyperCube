@@ -1,95 +1,91 @@
-# Quantum Hypercube: Next-Generation Multidimensional Physics Simulation Platform
+# Квантовый гиперкуб: платформа для многомерного физического моделирования нового поколения
 
-![Quantum Hypercube Visualization](https://via.placeholder.com/1200x600?text=Quantum+Hypercube+Visualization)
+<img src="https://raw.githubusercontent.com/quantum-hypercube/artwork/main/logo.png" width="400" alt="Quantum Hypercube Logo">
 
-Quantum Hypercube (QH) is a revolutionary computational framework for modeling complex physical systems across multiple dimensions. It combines cutting-edge quantum computing principles, topological mathematics, and machine learning to enable unprecedented simulations of physical phenomena.
+**Quantum Hypercube (QH)** — революционная вычислительная платформа для моделирования сложных физических систем в многомерных пространствах. Сочетает передовые принципы квантовых вычислений, топологическую математику и машинное обучение для проведения беспрецедентного моделирования физических явлений.
 
-## Table of Contents
-- [Key Features](#key-features)
-- [Technical Specifications](#technical-specifications)
-- [Installation Guide](#installation-guide)
-- [Getting Started](#getting-started)
-- [Advanced Capabilities](#advanced-capabilities)
-- [Visualization Examples](#visualization-examples)
-- [Performance Benchmarks](#performance-benchmarks)
-- [Research Applications](#research-applications)
-- [Development Roadmap](#development-roadmap)
-- [Contributing](#contributing)
-- [Citation](#citation)
-- [License](#license)
+## Содержание
+- [Ключевые особенности](#ключевые-особенности-)
+- [Технические характеристики](#технические-характеристики-)
+- [Руководство по установке](#руководство-по-установке-)
+- [Приступая к работе](#приступая-к-работе-)
+- [Расширенные возможности](#расширенные-возможности-)
+- [Экспериментальные функции](#экспериментальные-функции-)
+- [Примеры визуализации](#примеры-визуализации-)
+- [Контрольные показатели](#контрольные-показатели-эффективности-)
+- [Исследовательские приложения](#исследовательские-приложения-)
+- [Дорожная карта](#дорожная-карта-развития-)
+- [Способствующий](#способы-участия-)
+- [Цитирование](#цитирование-)
+- [Лицензия](#лицензия-)
 
-## Key Features 🚀
+## Ключевые особенности 🚀
 
-### Quantum-Accurate Simulations
-- **Schrödinger Equation Solver**: Full numerical solution for quantum systems
-- **Quantum Uncertainty Integration**: Probabilistic querying with uncertainty parameters
-- **Superposition States**: Modeling of quantum superposition in classical systems
+### Квантово-точное моделирование
+- **Решение уравнения Шрёдингера**: Полное численное решение для квантовых систем
+- **Квантовые запросы**: Вероятностные вычисления с параметрами неопределённости
+- **Суперпозиционные состояния**: Моделирование квантовой суперпозиции в классических системах
 
-### Topological Intelligence
-- **Riemannian Geometry**: Curvature tensor computation and analysis
-- **Persistent Homology**: Identification of topological features across scales
-- **Parallel Transport**: Vector transportation along geodesic paths
+### Топологический Интеллект
+- **Риманова геометрия**: Вычисление и анализ тензора кривизны
+- **Персистентная гомология**: Выявление топологических особенностей
+- **Параллельный перенос**: Векторный перенос по геодезическим линиям
 
-### Physics-Constrained AI
-- **Symbolic Regression**: Discovery of physical laws with dimensional consistency
-- **Neural Emulator**: Physics-informed neural network surrogate modeling
-- **Symmetry Preservation**: Automatic enforcement of system symmetries
+### Физически-ориентированный ИИ
+- **Символьная регрессия**: Открытие физических законов с учётом размерностей
+- **Нейронный эмулятор**: Аппроксимация гиперкубов нейросетевыми моделями
+- **Сохранение симметрии**: Автоматическое обеспечение инвариантности системы
 
-### Adaptive Computation
-- **Intelligent Compression**: Automatic selection of optimal compression strategy
-- **Hardware Optimization**: GPU acceleration and parallel processing
-- **Topology-Sensitive Interpolation**: Adaptive methods based on curvature
+### Адаптивные вычисления
+- **Интеллектуальное сжатие**: Оптимальные стратегии под размерность данных
+- **Аппаратное ускорение**: Поддержка GPU (CUDA) и многоядерных CPU
+- **Топологическая интерполяция**: Методы, адаптированные к кривизне пространства
 
-## Technical Specifications ⚙️
+## Технические характеристики ⚙️
 
-| Component | Specification |
-|-----------|---------------|
-| **Dimensions** | 1D to 8D (higher with neural compression) |
-| **Resolution** | Up to 1024 points per dimension |
-| **Precision** | 99.8% (R²) interpolation accuracy |
-| **Data Compression** | Up to 100:1 lossless compression |
-| **GPU Acceleration** | NVIDIA CUDA, RTX 4090 optimized |
-| **Memory Management** | Adaptive strategies for large-scale systems |
-| **Supported Physics** | Quantum, relativistic, thermodynamic, electromagnetic |
+| Компонент               | Спецификация                                      |
+|-------------------------|--------------------------------------------------|
+| **Поддерживаемые размерности** | 1D-12D (с нейросетевым сжатием)                |
+| **Разрешение**          | До 1024 точек на измерение (адаптивное)           |
+| **Точность**            | 99.8% (R²) при квантовой коррекции               |
+| **Сжатие данных**       | До 100:1 (гибридное: ZSTD + нейросеть)           |
+| **Ускорение GPU**       | Оптимизация для NVIDIA RTX 4090                  |
+| **Управление памятью**  | Адаптивные стратегии для крупномасштабных систем |
+| **Поддерживаемая физика** | Квантовая, релятивистская, электромагнитная      |
 
-## Installation Guide 📦
+## Руководство по установке 📦
 
-### Prerequisites
-- Python 3.9+
-- NVIDIA GPU with CUDA 11.8+ (recommended)
-- 16GB+ RAM (32GB recommended for large simulations)
+### Предварительные условия
+- Python 3.10+
+- NVIDIA GPU с CUDA 12.0+ (рекомендуется)
+- 16 ГБ ОЗУ (32+ ГБ для больших систем)
 
-### Quick Install
+### Установка
 ```bash
-pip install quantum-hypercube
-```
-
-### Full Installation with Dependencies
-```bash
-# Create virtual environment
+# Создание виртуального окружения
 python -m venv qh_env
 source qh_env/bin/activate
 
-# Install core package
+# Установка основного пакета
 pip install quantum-hypercube
 
-# Install optional dependencies
-pip install cupy-cuda11x gplearn ripser sympy tensorflow zstandard matplotlib
+# Дополнительные зависимости
+pip install cupy-cuda12x gplearn ripser sympy tensorflow zstandard matplotlib
 ```
 
-### Docker Setup
+### Настройка Docker
 ```bash
 docker pull quantumhypercube/core:latest
 docker run -it --gpus all quantumhypercube/core
 ```
 
-## Getting Started 🏁
+## Приступая к работе 🏁
 
-### Basic Usage
+### Базовое использование
 ```python
 from quantum_hypercube import QuantumHypercube
 
-# Create a 3D hypercube
+# Создание 3D гиперкуба
 dimensions = {
     "x": (-5, 5),
     "y": (-3, 3),
@@ -97,31 +93,31 @@ dimensions = {
 }
 cube = QuantumHypercube(dimensions, resolution=64)
 
-# Define physical law
+# Определение физического закона
 cube.define_physical_law("sin(x)*cos(y)*exp(-z/2)")
 
-# Build hypercube
+# Построение гиперкуба
 cube.build_hypercube()
 
-# Query a point
+# Запрос значения в точке
 value = cube.query([1.5, 0.8, 2.3])
-print(f"Value at point: {value:.6f}")
+print(f"Значение в точке: {value:.6f}")
 ```
 
-### Quantum Query
+### Квантовый запрос
 ```python
-# Quantum query with uncertainty
+# Квантовый запрос с неопределенностью
 values = cube.quantum_query(
     point=[1.5, 0.8, 2.3],
     uncertainty=0.1,
     samples=20
 )
-print(f"Quantum values: {values}")
+print(f"Квантовые значения: {values}")
 ```
 
-### Solve Schrödinger Equation
+### Решение уравнения Шредингера
 ```python
-# Solve 1D Schrödinger equation
+# Решение для ангармонического осциллятора
 result = cube.solve_schrodinger(
     potential_expr="x**2 + 0.1*x**4",
     mass=0.5,
@@ -129,7 +125,7 @@ result = cube.solve_schrodinger(
     num_points=1000
 )
 
-# Plot results
+# Визуализация
 import matplotlib.pyplot as plt
 plt.plot(result['x'], result['potential'], 'k-', lw=2)
 for i in range(3):
@@ -137,16 +133,16 @@ for i in range(3):
 plt.show()
 ```
 
-## Advanced Capabilities 🔬
+## Расширенные возможности 🔬
 
-### Topology Analysis
+### Топологический анализ
 ```python
-# Compute topological properties
-topology = cube.compute_topology(method='riemannian')
-print(f"Ricci curvature: {topology['ricci_curvature']}")
-print(f"Betti numbers: {topology['betti_numbers']}")
+# Вычисление топологических свойств
+topology = cube.compute_topology(method="riemannian")
+print(f"Скалярная кривизна: {topology['scalar_curvature']}")
+print(f"Числа Бетти: {topology['betti_numbers']}")
 
-# Parallel transport of vector
+# Параллельный перенос вектора
 vector = [1.0, 0.5, -0.3]
 transported = cube.parallel_transport(
     vector, 
@@ -155,9 +151,9 @@ transported = cube.parallel_transport(
 )
 ```
 
-### Law Discovery
+### Открытие физических законов
 ```python
-# Discover physical laws
+# Обнаружение новых физических законов
 discovered_laws = cube.discover_physical_laws(
     n_samples=10000,
     population_size=20000,
@@ -165,125 +161,139 @@ discovered_laws = cube.discover_physical_laws(
     conserved_quantities=["energy", "momentum"]
 )
 
-# Print discovered laws
+# Вывод результатов
 for i, law in enumerate(discovered_laws):
-    print(f"Law #{i+1}: {law['simplified']} | Fitness: {law['fitness']:.4f}")
+    print(f"Закон #{i+1}: {law['simplified']} | Точность: {law['fitness']:.4f}")
 ```
 
-### Visualization
+## Экспериментальные функции 🧪
+
+### Генеративные гипервселенные (update_4.py)
 ```python
-# 3D Visualization
-fig = cube.visualize_3d(point_size=5, figsize=(14,10))
-fig.savefig('3d_projection.png')
-
-# 2D Holographic Projection
-img_buffer = cube.holographic_projection(
-    projection_dims=["x", "y"],
-    resolution=1024
+# Создание мультивселенной с альтернативными законами
+multiverse = cube.create_multiverse(
+    num_universes=5,
+    evolution_epochs=10,
+    mutation_rate=0.2
 )
-with open("projection.png", "wb") as f:
-    f.write(img_buffer.getbuffer())
+
+# Запрос значения во всех вселенных
+results = cube.multiverse_query([1.5, 0.8, 2.3], multiverse)
+for res in results:
+    print(f"Вселенная {res['universe']}: {res['value']:.6f} | Закон: {res['law'][:30]}...")
 ```
 
-## Visualization Examples 🎨
+### Python API
+```python
+from qh_api import create_universe, evolve_multiverse, query, MultiverseContext
 
-| Visualization Type | Description | Example Command |
-|--------------------|-------------|-----------------|
-| **3D Projection** | Interactive 3D point cloud | `cube.visualize_3d()` |
-| **Hologram** | 2D color-coded projection | `cube.holographic_projection(["x", "y"])` |
-| **Quantum States** | Wavefunction visualization | `plot_wavefunctions(result)` |
-| **Topology Map** | Curvature visualization | `plot_curvature(topology)` |
-| **Persistence Diagram** | Topological feature analysis | `plot_persistence(topology)` |
+# Работа с мультивселенной через контекст
+with MultiverseContext(base_universe) as mv:
+    multiverse = mv.generate(num=3, epochs=5)
+    results = mv.query_all([1.5, 0.8, 2.3])
+```
 
-## Performance Benchmarks ⚡
+> **Примечание:** Функции из update_4.py помечены как экспериментальные и находятся в активной разработке. Их поведение и API могут изменяться в будущих версиях.
 
-| Operation | Dimensions | Resolution | Time (CPU) | Time (GPU) | Speedup |
-|-----------|------------|------------|------------|------------|---------|
-| Hypercube Build | 3D | 128³ | 18.7s | 1.2s | 15.6x |
-| Quantum Query | 4D | - | 0.8ms | 0.05ms | 16x |
-| Schrödinger Solver | 1D | 1000 pts | 4.3s | 0.3s | 14.3x |
-| Topology Analysis | 4D | - | 22.5s | 1.8s | 12.5x |
-| Law Discovery | 5D | 10k samples | 3.2h | 18.4m | 10.4x |
+## Примеры визуализации 🎨
 
-*Tested on Intel i9-13900K vs NVIDIA RTX 4090*
+| Тип визуализации       | Описание                                | Пример команды                          |
+|------------------------|-----------------------------------------|----------------------------------------|
+| **3D проекция**        | Интерактивное облако точек              | `cube.visualize_3d()`                  |
+| **Голограмма**         | 2D проекция с цветовой кодировкой       | `cube.holographic_projection(["x","y"])` |
+| **Фрактальная структура**| Визуализация иерархических вселенных   | `cube.visualize_fractal(['x','y'], depth=4)` |
+| **Карта кривизны**     | Визуализация тензора Риччи              | `plot_ricci_curvature(topology)`       |
+| **Диаграмма персистенции** | Анализ топологических особенностей    | `plot_persistence(topology)`           |
 
-## Research Applications 🧪
+## Контрольные показатели эффективности ⚡
 
-### Fundamental Physics
-- Quantum field theory simulations
-- Gravitational wave propagation models
-- High-energy particle interactions
+| Операция                | Размерность | Разрешение | Время (CPU) | Время (GPU) | Ускорение |
+|-------------------------|-------------|------------|-------------|-------------|----------|
+| Построение гиперкуба    | 3D          | 128³       | 18.7 с      | 1.2 с       | 15.6x    |
+| Квантовый запрос        | 4D          | -          | 0.8 мс      | 0.05 мс     | 16x      |
+| Решение Шредингера      | 1D          | 1000 точек | 4.3 с       | 0.3 с       | 14.3x    |
+| Топологический анализ   | 4D          | -          | 22.5 с      | 1.8 с       | 12.5x    |
+| Открытие законов        | 5D          | 10k сэмплов| 3.2 ч       | 18.4 мин    | 10.4x    |
 
-### Materials Science
-- Topological insulator analysis
-- Quantum dot energy states
-- Superconductivity modeling
+> Тестирование проводилось на Intel i9-13900K и NVIDIA RTX 4090
 
-### Cosmology
-- Cosmic microwave background analysis
-- Dark matter distribution modeling
-- Gravitational lensing simulations
+## Исследовательские приложения 🧪
 
-### Quantum Chemistry
-- Molecular orbital calculations
-- Reaction pathway exploration
-- Electron density mapping
+### Фундаментальная физика
+- Моделирование квантовой теории поля
+- Распространение гравитационных волн
+- Взаимодействия частиц высокой энергии
 
-## Development Roadmap 🗺️
+### Материаловедение
+- Топологический анализ изоляторов
+- Энергетические состояния квантовых точек
+- Моделирование сверхпроводимости
+
+### Космология
+- Анализ реликтового излучения
+- Моделирование распределения темной материи
+- Гравитационное линзирование
+
+### Квантовая химия
+- Расчеты молекулярных орбиталей
+- Исследование путей химических реакций
+- Отображение электронной плотности
+
+## Дорожная карта развития 🗺️
 
 ### Q4 2025
-- [x] Quantum operation implementations
-- [x] Topological analysis module
-- [x] Physics-constrained symbolic regression
+- [x] Реализация квантовых операций
+- [x] Модуль топологического анализа
+- [x] Символьная регрессия с физическими ограничениями
 
 ### Q1 2026
-- [ ] Quantum-relativistic integration
-- [ ] Gravitational wave propagation models
-- [ ] Multi-universe simulation framework
+- [ ] Квантово-релятивистская интеграция
+- [ ] Модели распространения гравитационных волн
+- [ ] Стабилизация генеративных гипервселенных (экспериментальная функция)
 
 ### Q2 2026
-- [ ] Quantum circuit emulation
-- [ ] Quantum machine learning integration
-- [ ] Distributed computing support
+- [ ] Эмуляция квантовых схем
+- [ ] Интеграция квантового машинного обучения
+- [ ] Поддержка распределенных вычислений
 
 ### Q3 2026
-- [ ] Quantum hardware integration (QPU)
-- [ ] Holographic VR visualization
-- [ ] Real-time collaborative simulation
+- [ ] Интеграция с квантовыми процессорами (QPU)
+- [ ] Голографическая VR-визуализация
+- [ ] Совместное моделирование в реальном времени
 
-## Contributing 👥
+## Способы участия 👥
 
-We welcome contributions from researchers and developers worldwide! To contribute:
+Мы приветствуем вклад исследователей и разработчиков! Чтобы принять участие:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a pull request
+1. Форкните репозиторий
+2. Создайте ветку для новой функции (`git checkout -b feature/amazing-feature`)
+3. Зафиксируйте изменения (`git commit -m 'Add amazing feature'`)
+4. Запушьте ветку (`git push origin feature/amazing-feature`)
+5. Откройте Pull Request
 
-Please read our [Contribution Guidelines](CONTRIBUTING.md) for detailed information.
+Пожалуйста, ознакомьтесь с [руководством по участию](CONTRIBUTING.md) перед отправкой вклада.
 
-## Citation 📚
+## Цитирование 📚
 
-If you use Quantum Hypercube in your research, please cite:
+Если вы используете Quantum Hypercube в своих исследованиях, просим цитировать:
 
 ```bibtex
-@software{QuantumHypercube2023,
+@software{QuantumHypercube2025,
   author = {Quantum Hypercube Team},
-  title = {Quantum Hypercube: Multidimensional Physics Simulation Platform},
+  title = {Quantum Hypercube: платформа для многомерного физического моделирования},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/miroaleksej/HyperCube/tree/main}}
+  howpublished = {\url{https://github.com/quantum-hypercube/core}}
 }
 ```
 
-## License 📄
+## Лицензия 📄
 
-Quantum Hypercube is released under the **Apache License 2.0**:
+Quantum Hypercube распространяется под лицензией Apache 2.0:
 
 ```
-Copyright 2023 Quantum Hypercube Team
+Copyright 2025 Quantum Hypercube Team
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -297,7 +307,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
----
-
-**Join our community**: [Discord](https://discord.gg/quantumhypercube) | [Twitter](https://twitter.com/QHypercube) | [Research Group](https://quantumhypercube.org)
