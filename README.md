@@ -284,7 +284,7 @@ with MultiverseContext(base_universe) as mv:
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/quantum-hypercube/core}}
+  howpublished = {\url{[https://github.com/miroaleksej](https://github.com/miroaleksej/HyperCube/tree/main)}}
 }
 ```
 
